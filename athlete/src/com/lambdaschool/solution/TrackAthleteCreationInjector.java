@@ -1,6 +1,10 @@
 package com.lambdaschool.solution;
 
-public class TrackAthleteCreationInjector implements AthleteInjector
+public class TrackAthleteCreationInjector implements AthleteCreationInjector
 {
-
+	@Override
+	public Processor getProcess()
+	{
+		return new MyApplication(new AthleteDisplayImpl(), "Track", "Runner");
+	}
 }
