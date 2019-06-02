@@ -16,7 +16,7 @@ public class MyApplication implements Processor
 	@Override
 	public void displayAthlete()
 	{
-		String msg = "************\n" + sport + " " + athleteType + "\n************";
+		String msg = "************\n" + sport + " " + athleteType + "\n************\n";
 		msgSrv.printMessage(msg);
 	}
 
